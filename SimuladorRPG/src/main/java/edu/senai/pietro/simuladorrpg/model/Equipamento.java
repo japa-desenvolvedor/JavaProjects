@@ -68,4 +68,8 @@ public enum Equipamento {
     public TipoEquipamento getTipo() {
         return tipo;
     }
+    
+    public String toString(){
+        return nome + " +" + bonus;
+    }
 }

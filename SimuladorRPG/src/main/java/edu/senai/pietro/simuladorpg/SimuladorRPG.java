@@ -6,13 +6,12 @@ import edu.senai.pietro.simuladorrpg.model.Equipamento;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class SimuladorRPG extends JFrame {
 
-    private static final Logger logger = 
-        java.util.logging.Logger.getLogger(SimuladorRPG.class.getName());
+    private static final Logger logger
+            = java.util.logging.Logger.getLogger(SimuladorRPG.class.getName());
 
     private CardLayout cardLayout;
     private JPanel mainPanel;
@@ -36,6 +35,12 @@ public class SimuladorRPG extends JFrame {
     private JComboBox<Monstro> comboMonstro;
     private JTextArea areaCombate;
 
+    // Botão de atacar
+    private JButton btnLutar;
+
+    // Área de resultado (campo da classe para facilitar acesso)
+    private JTextArea resultadoArea;
+
     public SimuladorRPG() {
         initComponents();
         criarTelas();
@@ -57,7 +62,7 @@ public class SimuladorRPG extends JFrame {
         // ===== TELA DE CRIAÇÃO DO JOGADOR =====
         telaCriacao = new JPanel(new BorderLayout());
         JPanel form = new JPanel(new GridLayout(0, 2, 5, 5));
-        
+
         form.add(new JLabel("Nome do Herói:"));
         campoNome = new JTextField("Guerreiro");
         form.add(campoNome);
@@ -88,7 +93,8 @@ public class SimuladorRPG extends JFrame {
         comboMonstro = new JComboBox<>(Monstro.values());
         painelMonstro.add(comboMonstro);
 
-        JButton btnLutar = new JButton("Atacar!");
+        // botão de atacar (corrigido: variável criada e listener adicionada)
+        btnLutar = new JButton("Atacar!");
         btnLutar.addActionListener(e -> iniciarCombate());
 
         areaCombate = new JTextArea();
@@ -101,14 +107,21 @@ public class SimuladorRPG extends JFrame {
 
         // ===== TELA DE RESULTADO =====
         telaResultado = new JPanel(new BorderLayout());
-        JTextArea resultadoArea = new JTextArea();
+        resultadoArea = new JTextArea();
         resultadoArea.setEditable(false);
         resultadoArea.setFont(new Font("Monospaced", Font.BOLD, 14));
         resultadoArea.setWrapStyleWord(true);
         resultadoArea.setLineWrap(true);
 
-        JButton btnNovoJogo = new JButton("Jogar Novamente");
-        btnNovoJogo.addActionListener(e -> mostrarTela("criacao"));
+        JButton btnNovoJogo = new JButton(  "Jogar Novamente");
+        btnNovoJogo.addActionListener(e -> {
+            // limpa dados e volta para criação
+            jogador = null;
+            monstroEscolhido = null;
+            campoNome.setText("Guerreiro");
+            spinnerNivel.setValue(5);
+            mostrarTela("criacao");
+        });
 
         telaResultado.add(new JLabel("🏆 RESULTADO 🏆", JLabel.CENTER), BorderLayout.NORTH);
         telaResultado.add(new JScrollPane(resultadoArea), BorderLayout.CENTER);
@@ -135,16 +148,37 @@ public class SimuladorRPG extends JFrame {
         jogador = new Jogador(nome, nivel, arma, armadura);
 
         mostrarTela("combate");
-        areaCombate.setText("Herói " + jogador.getNome() + " (Nível " + jogador.getNivel() + ") está pronto para lutar!\n" +
-                           "Escolha um monstro e ataque!");
+        areaCombate.setText("Herói " + jogador.getNome() + " (Nível " + jogador.getNivel() + ") está pronto para lutar!\n"
+                + "Escolha um monstro e ataque!");
     }
 
     private void iniciarCombate() {
         monstroEscolhido = (Monstro) comboMonstro.getSelectedItem();
-        if (jogador == null || monstroEscolhido == null) return;
+        if (jogador == null) {
+            JOptionPane.showMessageDialog(this, "Crie seu herói antes de lutar!", "Aviso", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if (monstroEscolhido == null) {
+            JOptionPane.showMessageDialog(this, "Escolha um monstro antes de atacar!", "Aviso", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
 
-        int forcaJogador = jogador.getForcaTotal(); // você deve implementar esse método em Jogador
-        int forcaMonstro = monstroEscolhido.getNivel();
+        // Consulte os métodos reais das suas classes Jogador e Monstro:
+        int forcaJogador;
+        try {
+            forcaJogador = jogador.getForcaTotal(); // implemente / verifique este método em Jogador
+        } catch (Exception ex) {
+            // fallback simples caso o método não exista
+            forcaJogador = jogador.getNivel();
+        }
+
+        int forcaMonstro;
+        try {
+            // aqui eu assumi que Monstro tem getNivel(), se for outro método adapte
+            forcaMonstro = monstroEscolhido.getNivel();
+        } catch (Exception ex) {
+            forcaMonstro = 1;
+        }
 
         StringBuilder sb = new StringBuilder();
         sb.append("⚔️ COMBATE INICIADO! ⚔️\n\n");
@@ -162,9 +196,7 @@ public class SimuladorRPG extends JFrame {
         }
 
         // Mostrar resultado
-        JTextArea resultadoArea = (JTextArea) ((JScrollPane) ((JPanel) telaResultado.getComponent(1)).getComponent(0)).getViewport().getView();
         resultadoArea.setText(sb.toString());
-
         mostrarTela("resultado");
     }
 

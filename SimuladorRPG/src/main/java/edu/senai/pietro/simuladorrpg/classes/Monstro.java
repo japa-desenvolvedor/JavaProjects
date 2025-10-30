@@ -4,7 +4,10 @@ package edu.senai.pietro.simuladorrpg.classes;
 public enum Monstro {
     ORC_DE_TELEMARKETING("Orc de Telemarketing", 3),
     DRAGAO_LADRAO("Dragão Ladrão", 8),
-    GOBLIN_FRUSTADO("Goblin Frustado", 2);
+    MARCO_FRUSTADO("Marco Frustado", 2),
+    MAGO_DA_REQUISICAO_DO_INFERNO("Mago da requisição do inferno", 4),
+    BRUXO_DO_NEXT("Bruxo do next", 5),
+    BULL_BOÇALZINHO("Bull Boçalzinho", 1);
 
     private final String nome;
     private final int nivel;
