@@ -1,0 +1,4 @@
+edu\senai\guilherme\simuladorrpg\model\TipoEquipamento.class
+edu\senai\guilherme\simuladorrpg\model\Equipamento.class
+edu\senai\guilherme\simuladorrpg\model\Monstro.class
+edu\senai\guilherme\simuladorrpg\SimuladorRPG.class
