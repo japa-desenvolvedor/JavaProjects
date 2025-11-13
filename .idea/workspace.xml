@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a977a43-f1c3-4cf4-b49a-1d908f692689" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Projeto_Final/core/src/main/java/senai/projeto/pietro/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/Produto/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/Interface/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/Padaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/Ui/Principal.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/Ui/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/model/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/model/ProdutoEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/model/ProdutoVenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/src/main/java/edu/pietro/padaria/service/ProdutoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/Padaria-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/Produto/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/Padaria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/Ui/Principal$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/Ui/Principal$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/Ui/Principal$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/Ui/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/model/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/model/ProdutoEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/model/ProdutoVenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/classes/edu/pietro/padaria/service/ProdutoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Padaria/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorpg/SimuladorRPG.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorpg/SimuladorRPG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/classes/Equipamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/classes/Jogador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/classes/Monstro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/model/Equipamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/model/Monstro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/model/TipoEquipamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimuladorRPG/src/main/java/edu/senai/pietro/simuladorrpg/service/EquipamentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/src/main/java/Produto/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/src/main/java/edu/pietro/eshop/EShop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/classes/Produto/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/classes/edu/pietro/eshop/EShop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/eShop-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eShop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/Projeto_Final">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="35Oi8z9rRuEgKLgVb3fQkYIHpRE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Projeto_Final.executor": "Run",
+    "Gradle.C:/Users/PietroJava/Documents/JavaProjects/Projeto_Final.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PietroJava\Documents\JavaProjects\Projeto_Final" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Projeto_Final" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="senai.projeto.pietro.Main" />
+      <module name="JavaProjects" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projeto_Final" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a977a43-f1c3-4cf4-b49a-1d908f692689" name="Changes" comment="" />
+      <created>1762987365005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762987365005</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaProjects$Projeto_Final.ic" NAME="Projeto_Final Coverage Results" MODIFIED="1762988707638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
